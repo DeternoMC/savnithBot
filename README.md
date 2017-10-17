@@ -21,7 +21,7 @@
 
 You need to install https://nodejs.org/en/ before continuing!
  
-Click the file that says First Install.bat and it installs everything that is needed.
+Click the file that says First Start.bat and it installs everything that is needed.
 
 ## How to connect to a server? ##
 

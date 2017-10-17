@@ -1,12 +1,23 @@
 {
     "name": "savnithBot",
     "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
     "author": "savnith",
     "contributors": [],
-    "dependencies": {},
+    "dependencies": {
+        "minecraft-protocol": "^1.4.1",
+        "mineflayer": "^2.6.1",
+        "mineflayer-navigate": "0.0.10",
+        "path": "^0.12.7",
+        "requireindex": "^1.1.0"
+    },
     "scripts": {
         "start": "node main.js"
     }
-
 }

@@ -27,4 +27,10 @@ Click the file that says First Start.bat and it installs everything that is need
 
 Make a new BAT file and put in the root folder:
 
-node ./srv/savnithBot.js serverip port version (if u want it cracked just put a username here) password
+node ./srv/savnithBot.js serverip port version email(if u want it cracked just put a username here) password
+
+EXAMPLE: (Premium account)
+node ./srv/savnithBot.js play.totalfreedom.me 25565 1.12.2 savnithbot@gmail.com SavnithBot
+
+EXAMPLE: (Cracked Account)
+node ./srv/savnithBot.js play.totalfreedom.me 25565 1.12.2 SavnithBot SavnithBot

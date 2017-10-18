@@ -20,7 +20,7 @@ function inject(bot) {
     rl.on('line', function (consolecmd) {
         if (consolecmd.startsWith('say ')) {
             bot.chat(consolecmd.substring(4))
-            console.log("Message sent ingame.")
+            console.log("Message sent!")
         }
         if (consolecmd == 'stop') {
             bot.navigate.stop()
@@ -40,7 +40,7 @@ function inject(bot) {
                 foloutId = setInterval(followTarget, 1000);
                 bot.chat("Started following " + plnam)
             } else {
-                console.log("Could not find player.")
+                console.log("Could not find player. Please name a valid user!")
             }
         }
         if (consolecmd.startsWith('kill ')) {
@@ -52,16 +52,16 @@ function inject(bot) {
                 attoutId = setInterval(attackTarget, 500);
                 bot.chat("Attempting to kill " + plnam + "!")
             } else {
-                console.log("Could not find player.")
+                console.log("Could not find player. Please name a valid user!")
             }
         }
         if (consolecmd.startsWith("cmd ")) {
             var cmdtoexec = (consolecmd.substring(4)).trim()
             if (cmdtoexec != null) {
                 bot.chat("/" + cmdtoexec)
-                console.log("Command Executed.")
+                console.log("Command Executed!")
             } else {
-                console.log("You need to specify a command")
+                console.log("Please specify a valid command!")
             }
         }
         rl.prompt();
@@ -80,7 +80,7 @@ function inject(bot) {
     }
     bot.on('entityGone', function (entity) {
         if (entity === global.target) {
-            console.log("Player out of range.")
+            console.log("Player out of range!")
             bot.navigate.stop();
         }
     });

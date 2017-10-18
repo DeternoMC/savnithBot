@@ -10,6 +10,6 @@ function inject(bot) {
     });
     
     bot.on('login', function () {
-        bot.chat('Hello, I am a BOT created by Savnith v1.1.')
+        bot.chat('Hello, I am SavnithBot! I am currently version v1.1.')
     });
 }

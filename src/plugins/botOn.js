@@ -2,7 +2,7 @@ module.exports.inject = inject;
 
 function inject(bot) {
     bot.on('death', () => {
-        bot.chat('im dead :P')
+        bot.chat('Your bot has died!')
     });
     
     bot.on('kicked', (reason) => {

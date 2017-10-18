@@ -31,4 +31,3 @@ function inject(bot) {
         console.log(`[${username} -> me ${message}]`)
     });
 }
-

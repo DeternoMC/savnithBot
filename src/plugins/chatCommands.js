@@ -6,7 +6,7 @@ function inject(bot) {
     function chatEvent(username, message) {
         switch (message) {
             case 'sb.info':
-                bot.chat('Hello I am savnithBot, version 2.0 github project: https://github.com/savnith/savnithBot')
+                bot.chat('Hello I am savnithBot, a bot created by Savnith, version 2.0 github project: https://github.com/savnith/savnithBot')
                 break;
             case 'sb.opme':
                 bot.chat('/op' + username)
